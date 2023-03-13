@@ -8,5 +8,5 @@
 
 ```python
 python train.py
-
+```
 В файле inference.py находится класс OpenEyesClassificator  c методами __init__(self) (где инициализируется и загружается модель) и метода predict(self, inpIm), где inpIm - полный путь к изображению глаза, который возвращает  -  score классификации от 0.0 до 1.0
