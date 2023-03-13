@@ -51,8 +51,7 @@ class OpenEyesClassifier:
         with torch.no_grad():
             output = self.model(img)
             probs = torch.softmax(output, dim=1)
+            is_open_score = probs[:, 1].cpu().numpy()
             preds = torch.argmax(probs, dim=1)
 
-        return preds.item()
-
-
+        return is_open_score
