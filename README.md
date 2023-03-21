@@ -1,12 +1,11 @@
 # OpenEyesClassificator
+A more detailed description of the solution can be found here : https://abounding-stoat-8a4.notion.site/Classification-of-open-and-closed-eyes-4498bdbf8c944ca09bf9a112de95d58c 
 
-Более подробное описание решения можно найти тут: https://www.notion.so/OpenEyesClassificator-9416d4c1f6b1420bae42ce0b31476557?pvs=4 
+Weights: https://drive.google.com/file/d/1y2TN8W_bT5ePGPrVxI20k9205eP5oUz5/view?usp=sharing
 
-Веса: https://drive.google.com/file/d/1y2TN8W_bT5ePGPrVxI20k9205eP5oUz5/view?usp=sharing
-
-Чтобы обучить модель: 
+To train a model:
 
 ```python
 python train.py
 ```
-В файле inference.py находится класс OpenEyesClassificator  c методами __init__(self) (где инициализируется и загружается модель) и метода predict(self, inpIm), где inpIm - полный путь к изображению глаза, который возвращает  -  score классификации от 0.0 до 1.0
+The inference.py file contains the OpenEyesClassificator class with the __init__(self) methods (where the model is initialized and loaded) and the predict(self, inpIm) method, where inpIm is the full path to the eye image, which returns - classification score from 0.0 to 1.0
